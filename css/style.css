@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+    /* TODAS LAS CLASES QUE TENGAN P AL FINALIZAR SON CLASES PROPIAS, OSEA CREADAS POR MI PARA MODIFICAR CON MI CSS */
+
+/* NAVBAR */
+.buttomNavBarP{ /*focus es cuadno se hace click*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttomNavBarP:focus{
+    box-shadow: none;
+}
+.hideNavBarP{
+    display: none;
+}
+.buttomNavBarP:focus .showNavBarP{
+    display: none;
+}
+.buttomNavBarP:focus .hideNavBarP{
+    display: block;
+}
+
+nav span i, nav a{
+    color: white;
+}
