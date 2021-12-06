@@ -1,0 +1,19 @@
+{
+  "name": "bootstraprepo",
+  "version": "1.0.0",
+  "description": "Este sitio esta hecho por Pablo Reyes para aprobar el curso de Desarrollo Web de Coder House",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss/style.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PabloReyyes/WebDevCoderHouse.git"
+  },
+  "author": "Pablo Reyes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PabloReyyes/WebDevCoderHouse/issues"
+  },
+  "homepage": "https://github.com/PabloReyyes/WebDevCoderHouse#readme"
+}

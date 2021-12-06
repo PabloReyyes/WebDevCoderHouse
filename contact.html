@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
     <script src="https://kit.fontawesome.com/c03ef37cb0.js"crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
-    <title>Contact</title>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <div><!-- TODA LA PAGINA, ALTURA DE 100VH -->
@@ -16,7 +16,7 @@
         <header><!-- Header y barra de navegacion -->
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html">Pablo Reyes</a>
+                    <a class="navbar-brand" href="index.html">PR/WD</a>
                     <button class="navbar-toggler buttomNavBarP" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="showNavBarP"><i class="fas fa-angle-double-down"></i></span>
                         <span class="hideNavBarP"><i class="fas fa-angle-double-up"></i></span>
@@ -36,7 +36,7 @@
                                 <a class="nav-link" href="proyects.html">Proyects</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contact</a>
+                                <a class="nav-link onPageP" href="contact.html">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -47,15 +47,80 @@
         </header><!-- Header y barra de navegacion -->
 
         <main><!--Main, cuerpo de la pagina-->
-
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1>Contact</h1>
+                    </div>
+                    <div class="col-12">
+                        <p>No dudes en dejarme tu consulta/comentario!</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="contForm">
+                        <form class="row g-3">
+                            <div class="col-md-6">
+                                <label for="firstName" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="Nombre">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="lastName" class="form-label">Apellido</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="Apellido">
+                            </div>
+                            <div class="col-12">
+                                <label for="inputEmail4" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="inputEmail4" placeholder="Your Email">
+                            </div>
+                            <div class="col-12">
+                                <label for="message" class="form-label">Mensaje</label>
+                                <textarea name="message" id="message" cols="" rows="10" placeholder="Write your message here" class="formPH"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                    <label class="form-check-label" for="gridCheck">Guardar Datos</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                            <button type="submit" class="btn btn-primary" value="Send">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </main><!--Main, cuerpo de la pagina-->
-
+        
         <footer><!--Footer-->
-
-        <footerv><!--Footer-->
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <div class="col-12">
+                        <div class="row">
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="fab fa-github-square"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="fab fa-instagram-square"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </footer><!--Footer-->
 
     </div>
 
+    <!-- JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>   </body>
 </html>
