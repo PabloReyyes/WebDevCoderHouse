@@ -1,4 +1,3 @@
-/*Colores*/
 /*texto*/
 /*Global*/
 html {
@@ -6,11 +5,22 @@ html {
 }
 
 body {
-  background-color: #4e4ca1;
+  background-color: white;
   height: 100vh;
 }
-body header nav {
+body .borderojo {
+  border: 3px solid red;
+}
+body .bordeazul {
+  border: 3px solid blue;
+}
+body .bordeverde {
+  border: 3px solid green;
+}
+body nav {
   background-color: #0d2757;
+}
+body header nav {
   top: 0;
 }
 body header nav .buttomNavBarP {
@@ -43,74 +53,94 @@ body header nav li a:hover {
 body header nav li .onPageP, body header nav li a:hover {
   border-bottom: 5px solid #3b96ca;
 }
-body main h1 {
-  color: #31d5e0;
-  font-size: 3.5rem;
+body main {
+  background-color: #8b3f8b;
+}
+body main h1, body main .pseudoSubTitle {
   text-align: center;
-  text-transform: capitalize;
+  color: #31d5e0;
 }
-body main p {
-  font-size: 1rem;
-}
-body footer {
-  background-color: #0d2757;
-  width: 100%;
-  height: 3.5rem;
-}
-body footer nav {
-  display: flex;
-  justify-content: center;
-}
-body footer nav ul {
+body footer ul {
   list-style: none;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-body footer nav ul li {
-  padding: 0 2rem 0 2rem;
-}
-body footer nav ul li i {
+body footer ul i {
   color: #3b96ca;
-  font-size: 2.5rem;
+  font-size: 2rem;
+  margin: 1rem;
+}
+body footer ul i:hover {
+  font-size: 3rem;
+  margin: 0.5rem;
 }
 
 /* npm run compile:sass */
 /*Index*/
-main .similSubTitle {
-  margin-top: 0;
-  padding-top: 0;
-  color: white;
-  text-align: center;
-}
-main .indexImgCont {
+.indexImgCont {
   display: flex;
   justify-content: center;
+  margin-top: 3rem;
 }
-main .indexImgCont .indexImg {
+.indexImgCont .indexImg {
   width: 350px;
-  height: 500px;
-  border-radius: 5%;
-  background-image: url(/images/pablo.jpeg);
-  background-size: 350px 500px;
+  height: 350px;
+  border-radius: 50%;
+  background-image: url(https://picsum.photos/id/1025/700/400);
+  background-position-x: 49.999%;
+  background-position-y: 0%;
   background-repeat: no-repeat;
-  padding-left: 100px;
 }
-main .textIndex {
+
+.indexText {
+  margin: 2rem auto 2rem auto;
   display: flex;
-  flex-flow: column wrap;
-  align-items: flex-start;
   justify-content: center;
+  max-width: 30rem;
 }
 
 /*About*/
-.aboutImgs {
-  width: 250px;
-  height: auto;
+.rompeCabeza {
+  max-width: 1500px;
 }
 
-.border {
-  border: 2px solid green;
+.pieza {
+  max-width: inherit;
+}
+.pieza .cuadradoCirq {
+  max-width: 750px;
+  height: 200px;
+  background-color: yellow;
+  position: relative;
+}
+.pieza .cuadradoCirq .circulo {
+  width: 87px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: yellow;
+  position: absolute;
+  bottom: 27%;
+  left: 97%;
+}
+.pieza .cuadrado {
+  max-width: 750px;
+  height: 200px;
+  background-color: green;
+}
+
+.piezaDer, .piezaTop {
+  transform: rotate(180deg);
+}
+
+.piezaTop .cuadrado {
+  position: relative;
+}
+.piezaTop .cuadrado .circulo {
+  position: absolute;
+  background-color: black;
+  left: 50%;
+  bottom: 50%;
 }
 
 /*Services*/
@@ -137,9 +167,56 @@ main .textIndex {
 }
 
 /*Proyects*/
-.carouselExampleFade {
-  width: 70vw;
-  height: 50vh;
+.gallery {
+  padding: 3rem 0;
+  max-width: 1500px;
+}
+.gallery .imgGalleryCont {
+  margin: 0;
+  padding: 0;
+}
+.gallery .imgGalleryCont .imgGallery {
+  min-width: 300px;
+  min-height: 250px;
+  max-width: 600px;
+  max-height: 500px;
+  background-color: blue;
+  border: 4px solid #5519b4;
+  padding: 0;
+  margin: 0;
+  background-position: center;
+  background-size: cover;
+}
+.gallery .imgGalleryCont .img1 {
+  background-image: url(https://www.xtrafondos.com/wallpapers/resized/paisaje-digital-en-atardecer-5846.jpg?s=large);
+}
+.gallery .imgGalleryCont .img2 {
+  background-image: url(https://www.xtrafondos.com/wallpapers/resized/atardecer-en-chicago-323.jpg?s=large);
+}
+.gallery .imgGalleryCont .img3 {
+  background-image: url(https://www.xtrafondos.com/wallpapers/resized/trafico-en-san-francisco-4930.jpg?s=large);
+}
+.gallery .imgGalleryCont .img4 {
+  background-image: url(https://www.xtrafondos.com/wallpapers/resized/montana-en-lago-en-dia-nublado-5803.jpg?s=large);
+}
+.gallery .imgGalleryCont .img5 {
+  background-image: url(https://www.xtrafondos.com/wallpapers/resized/montanas-en-atardecer-rosado-7895.jpg?s=large);
+}
+.gallery .imgGalleryCont .img6 {
+  background-image: url(https://www.xtrafondos.com/wallpapers/resized/montanas-en-niebla-2145.jpg?s=large);
+}
+.gallery .imgGalleryCont .img7 {
+  background-image: url(https://www.xtrafondos.com/wallpapers/resized/hielo-en-isla-8933.jpg?s=large);
+}
+.gallery .imgGalleryCont .img8 {
+  background-image: url(https://www.xtrafondos.com/wallpapers/resized/atardecer-en-el-oceano-1368.jpg?s=large);
+}
+.gallery .imgGalleryCont .img9 {
+  background-image: url(https://www.xtrafondos.com/wallpapers/resized/playa-nocturna-en-las-bahamas-8375.jpg?s=large);
+}
+
+.modalDimension {
+  max-width: 60vw !important;
 }
 
 /*Contact*/
