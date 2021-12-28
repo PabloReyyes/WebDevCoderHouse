@@ -6,7 +6,6 @@ html {
 
 body {
   background-color: white;
-  height: 100vh;
 }
 body .borderojo {
   border: 3px solid red;
@@ -101,49 +100,137 @@ body footer ul i:hover {
 }
 
 /*About*/
-.rompeCabeza {
-  max-width: 1500px;
+.about img {
+  max-height: 150px;
+  min-width: 150px;
+  margin: auto 25% auto 25%;
 }
-
-.pieza {
+.about .centerCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about .centerCont p {
+  margin-right: 1.3rem;
+}
+.about .rompeCabeza {
+  width: 100%;
+}
+.about .rompeCabeza .argFlag {
+  max-height: 130px;
+}
+.about .rompeCabeza .pieza {
   max-width: inherit;
-}
-.pieza .cuadradoCirq {
-  max-width: 750px;
-  height: 200px;
-  background-color: yellow;
+  height: 150px;
+  background-color: red;
   position: relative;
 }
-.pieza .cuadradoCirq .circulo {
+.about .rompeCabeza .circulo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #4c00ff;
+  position: absolute;
+}
+.about .rompeCabeza .puntaSup .pieza, .about .rompeCabeza .puntaInf .pieza {
+  margin-right: 2.5rem;
+  height: 50px;
+  background-color: #4c00ff;
+}
+.about .rompeCabeza .puntaSup .circulo, .about .rompeCabeza .puntaInf .circulo {
+  left: 99%;
+  bottom: 25%;
+  height: 25px;
+  width: 25px;
+}
+.about .rompeCabeza .puntaInf {
+  transform: rotate(180deg);
+  margin: 1.5rem 0 1.5rem 0;
+}
+.about .rompeCabeza .encaje {
+  margin-top: 1.5rem;
+}
+.about .rompeCabeza .encaje .piezaSup {
+  background-color: greenyellow;
+}
+.about .rompeCabeza .encaje .piezaSup .circulo {
+  left: 10%;
+  bottom: -25%;
+  z-index: 900;
+  background-color: greenyellow;
+}
+.about .rompeCabeza .encaje .piezaInf {
+  background-color: grey;
+}
+.about .rompeCabeza .encaje .piezaInf .circulo {
+  background-color: grey;
+  right: 10%;
+  top: -25%;
+}
+.about .rompeCabezaMd {
+  max-width: 1500px;
+  margin: 1.5rem 0;
+}
+.about .rompeCabezaMd .circulo {
   width: 87px;
   height: 90px;
   border-radius: 50%;
-  background-color: yellow;
   position: absolute;
+}
+.about .rompeCabezaMd .pieza {
+  margin: 0.5rem 0 0.5rem 0;
+  max-width: inherit;
+}
+.about .rompeCabezaMd .pieza .cuadradoCirq {
+  max-width: 750px;
+  min-height: 200px;
+  background-color: yellow;
+  position: relative;
+}
+.about .rompeCabezaMd .pieza .cuadradoCirq .circulo {
+  background-color: yellow;
   bottom: 27%;
   left: 97%;
 }
-.pieza .cuadrado {
+.about .rompeCabezaMd .pieza .cuadrado {
   max-width: 750px;
-  height: 200px;
+  min-height: 200px;
   background-color: green;
 }
-
-.piezaDer, .piezaTop {
+.about .rompeCabezaMd .der {
   transform: rotate(180deg);
 }
-
-.piezaTop .cuadrado {
+.about .rompeCabezaMd .der .cuadrado, .about .rompeCabezaMd .der img {
+  transform: rotate(-180deg);
+}
+.about .rompeCabezaMd .der .circulo {
+  z-index: 90;
+}
+.about .rompeCabezaMd .piezaLarge {
+  max-width: 1500px;
+  background-color: black;
+}
+.about .rompeCabezaMd .piezaLarge .parte {
+  max-width: 750px;
+  height: 100px;
   position: relative;
 }
-.piezaTop .cuadrado .circulo {
-  position: absolute;
-  background-color: black;
-  left: 50%;
-  bottom: 50%;
+.about .rompeCabezaMd .piezaLarge .parteDer {
+  transform: rotate(180deg);
+}
+.about .rompeCabezaMd .piezaLarge .circulo {
+  background-color: #8b3f8b;
+  left: -1%;
+  bottom: 27%;
+  height: 45px;
+  width: 45px;
 }
 
 /*Services*/
+.margintitulo {
+  margin-top: 1.5rem;
+}
+
 .card {
   margin: 0.5rem 0.5rem;
   padding: 0.5rem;
@@ -224,12 +311,26 @@ body footer ul i:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
 }
 .contForm label {
   display: none;
 }
 .contForm textarea {
   width: 100%;
+}
+
+form {
+  margin: 1.5rem 1rem;
+  padding-bottom: 1rem;
+  background-color: #3b96ca;
+  border-radius: 2%;
+}
+
+.formHead {
+  margin-top: 1.5rem;
+  background-color: #3b96ca;
+  text-align: center;
 }
 
 /*npm run compile:sass para inicar a compilar, y ctrl + C para dejar de compilar */
